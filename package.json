@@ -4,7 +4,7 @@
   "description": "",
   "license": "",
   "scripts": {
-    "build": "concurrently \"yarn css\" \"remix build\"",
+    "build": "yarn css && remix build",
     "dev": "concurrently \"yarn css --watch\" \"remix dev\"",
     "postinstall": "remix setup node",
     "start": "remix-serve build",
